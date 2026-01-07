@@ -70,8 +70,8 @@ $(function() {
         self.ThemesInternalURL = './plugin/uicustomizer/static/themes/';
         self.ThemesBaseURL = self.ThemesInternalURL;
 
-        self.ThemesExternalURL = 'https://lazemss.github.io/OctoPrint-UICustomizerThemes/';
-        self.GitHubBaseUrL = 'LazeMSS/OctoPrint-UICustomizerThemes/releases/latest';
+        self.ThemesExternalURL = 'https://Sombody101.github.io/OctoPrint-UICustomizerThemes/';
+        self.GitHubBaseUrL = 'Sombody101/OctoPrint-UICustomizerThemes/releases/latest';
 
         // timer for resize fix modal
         self.modalTimer = null;
@@ -302,7 +302,7 @@ $(function() {
             // Load custom layout
             self.UpdateLayout(self.UICsettings);
 
-            // Rewrite the tab selector for settings - https://github.com/LazeMSS/OctoPrint-UICustomizer/issues/95
+            // Rewrite the tab selector for settings - https://github.com/Sombody101/OctoPrint-UICustomizer/issues/95
             var prevTab = self.coreSettings.selectTab;
             self.coreSettings.selectTab = function(tab){
                 if ($('body').hasClass('UICResponsiveMode')){
@@ -3101,7 +3101,7 @@ $(function() {
 
                 // Send the bug report from here
                 $(this).find('i').toggleClass('skull-crossbones bug');
-                url = 'https://github.com/LazeMSS/OctoPrint-UICustomizer/issues/new';
+                url = 'https://github.com/Sombody101/OctoPrint-UICustomizer/issues/new';
                 var body = "## Description\n**ENTER DESCRIPTION HERE\nDescribe your problem?\nWhat is the problem?\nCan you recreate it?\nDid you try disabling plugins?\nDid you remember to update the subject?**\n<hr>\n\n**Plugins installed**\n";
                 // Get plugin info
                 $.each(OctoPrint.coreui.viewmodels.pluginManagerViewModel.plugins.allItems,function(x,item){

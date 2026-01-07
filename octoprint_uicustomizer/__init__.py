@@ -21,8 +21,8 @@ class UICustomizerPlugin(octoprint.plugin.StartupPlugin,
     def __init__(self):
         self.remoteThemeCheck = 0
         self.baseFolder  = os.path.join(os.path.dirname(os.path.realpath(__file__)),'static','themes','css')
-        self.themeURL = 'https://lazemss.github.io/OctoPrint-UICustomizerThemes/css/'
-        self.themeVersion = 'https://api.github.com/repos/LazeMSS/OctoPrint-UICustomizerThemes/releases/latest'
+        self.themeURL = 'https://Sombody101.github.io/OctoPrint-UICustomizerThemes/css/'
+        self.themeVersion = 'https://api.github.com/repos/Sombody101/OctoPrint-UICustomizerThemes/releases/latest'
 
     def on_after_startup(self):
         # self._logger.warning(self.get_plugin_data_folder())
@@ -187,12 +187,12 @@ class UICustomizerPlugin(octoprint.plugin.StartupPlugin,
 
                 # version check: github repository
                 type="github_release",
-                user="LazeMSS",
+                user="Sombody101",
                 repo="OctoPrint-UICustomizer",
                 current=self._plugin_version,
 
                 # update method: pip
-                pip="https://github.com/LazeMSS/OctoPrint-UICustomizer/archive/{target_version}.zip"
+                pip="https://github.com/Sombody101/OctoPrint-UICustomizer/archive/{target_version}.zip"
             )
         )
 

@@ -1499,7 +1499,7 @@ body.UICOldCamFix .UIC_webcam_container_clone .webcam_unrotated .webcam_fixed_ra
     object-fit: contain;
 }
 
-/* https://github.com/LazeMSS/OctoPrint-UICustomizer/issues/314 */
+/* https://github.com/Sombody101/OctoPrint-UICustomizer/issues/314 */
 body:has(.pgfullscreen) #navbar {
     z-index: -1;
 }
